@@ -1,0 +1,10 @@
+{
+    "sub": "text",
+    "name": "text",
+    "given_name": "text",
+    "family_name": "text",
+    "picture": "text",
+    "locale": "text",
+    "email": "text",
+    "email_verified": boolean
+}
