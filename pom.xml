@@ -22,21 +22,6 @@
 		<suite>helloWorld</suite>
 	</properties>
 
-	<repositories>
-		<!-- Uncomment only for testing any SNAPSHOT version of carina or zebrunner agent! -->
-		<!--repository>
-			<id>zebrunner_snapshots</id>
-			<name>zebrunner Snapshots</name>
-			<url>https://nexus.zebrunner.dev/repository/ce-snapshots/</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository-->
-	</repositories>
-
 	<dependencies>
 		<dependency>
 			<groupId>com.qaprosoft</groupId>
@@ -81,16 +66,6 @@
 			<groupId>net.bytebuddy</groupId>
 			<artifactId>byte-buddy</artifactId>
 			<version>1.12.10</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mybatis</groupId>
-			<artifactId>mybatis</artifactId>
-			<version>3.5.6</version>
-		</dependency>
-		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<version>42.5.3</version>
 		</dependency>
 	</dependencies>
 

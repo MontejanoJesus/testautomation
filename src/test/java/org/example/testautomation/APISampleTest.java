@@ -6,9 +6,9 @@ import com.zebrunner.carina.api.apitools.validation.JsonCompareKeywords;
 import com.zebrunner.carina.core.registrar.ownership.MethodOwner;
 import com.zebrunner.carina.core.registrar.tag.Priority;
 import com.zebrunner.carina.core.registrar.tag.TestPriority;
-import org.example.testautomation.api.DeleteUserMethod;
+import org.example.testautomation.api.GetPostMethod;
 import org.example.testautomation.api.GetUserMethods;
-import org.example.testautomation.api.PostUserMethod;
+import org.example.testautomation.api.PostMethod;
 import org.skyscreamer.jsonassert.JSONCompareMode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -34,7 +34,7 @@ public class APISampleTest implements IAbstractTest {
     public void testCreateUser() throws Exception {
         LOGGER.info("test");
         setCases("4555,54545");
-        PostUserMethod api = new PostUserMethod();
+        PostMethod api = new PostMethod();
         api.setProperties("api/users/user.properties");
 
         AtomicInteger counter = new AtomicInteger(0);
@@ -52,7 +52,7 @@ public class APISampleTest implements IAbstractTest {
     @Test()
     @MethodOwner(owner = "qpsdemo")
     public void testCreateUserMissingSomeFields() throws Exception {
-        PostUserMethod api = new PostUserMethod();
+        PostMethod api = new PostMethod();
         api.setProperties("api/users/user.properties");
         api.getProperties().remove("name");
         api.getProperties().remove("username");
@@ -73,7 +73,7 @@ public class APISampleTest implements IAbstractTest {
     @MethodOwner(owner = "qpsdemo")
     @TestPriority(Priority.P1)
     public void testDeleteUsers() {
-        DeleteUserMethod deleteUserMethod = new DeleteUserMethod();
+        GetPostMethod deleteUserMethod = new GetPostMethod();
         deleteUserMethod.setProperties("api/users/user.properties");
         deleteUserMethod.callAPIExpectSuccess();
         deleteUserMethod.validateResponse();
