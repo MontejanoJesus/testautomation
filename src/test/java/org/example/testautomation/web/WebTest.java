@@ -2,6 +2,8 @@ package org.example.testautomation.web;
 
 import com.qaprosoft.carina.core.foundation.IAbstractTest;
 import com.zebrunner.carina.webdriver.core.capability.impl.desktop.FirefoxCapabilities;
+import org.example.testautomation.web.classic.EbayCarsAndTrucks;
+import org.example.testautomation.web.gsm.Gsmarena;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
@@ -75,4 +77,5 @@ public class WebTest implements IAbstractTest {
         }
 
     }
+
 }
