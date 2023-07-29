@@ -10,7 +10,7 @@ import org.openqa.selenium.support.FindBy;
 @DeviceType(pageType = DeviceType.Type.DESKTOP, parentClass = ShowAllBase.class)
 public class ShowAllPage extends ShowAllBase {
 
-    @FindBy(xpath = "//li[@title='Samsung Galaxy S23 phone specifications']/a")
+    @FindBy(xpath = "//*[@id=\"body\"]/div/div[1]/div/div[3]/ul/li[5]/a")
     private ExtendedWebElement specsLink;
 
     public ShowAllPage(WebDriver driver) {

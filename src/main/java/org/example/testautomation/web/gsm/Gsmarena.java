@@ -3,6 +3,7 @@ package org.example.testautomation.web.gsm;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import com.zebrunner.carina.webdriver.gui.AbstractPage;
 import org.example.testautomation.web.gsm.bases.BrandsBase;
+import org.example.testautomation.web.gsm.components.Header;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
@@ -12,6 +13,9 @@ import java.util.Map;
 
 
 public class Gsmarena extends AbstractPage {
+
+    @FindBy(id = "header")
+    private Header header;
 
     @FindBy(xpath = "//tbody//tr//nobr")
     private List<ExtendedWebElement> phoneNames;
@@ -24,7 +28,6 @@ public class Gsmarena extends AbstractPage {
 
     public Gsmarena(WebDriver driver) {
         super(driver);
-        setPageAbsoluteURL("https://www.gsmarena.com/");
     }
 
     public Map<String, String> getTopSamsung() {

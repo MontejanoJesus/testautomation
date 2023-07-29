@@ -25,7 +25,6 @@ public class EbayCarsAndTrucks extends AbstractPage {
 
     public EbayCarsAndTrucks(WebDriver driver) {
         super(driver);
-        setPageAbsoluteURL("https://www.ebay.com/b/Cars-Trucks/6001/bn_1865117");
     }
 
     public List<String> getCategories() {
