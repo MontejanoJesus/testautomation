@@ -21,4 +21,8 @@ public class SpecsPage extends SpecsBase {
         this.rumorMillLink.click();
         return initPage(this.driver, RumorBase.class);
     }
+
+    @Override
+    public void getPics() {
+    }
 }

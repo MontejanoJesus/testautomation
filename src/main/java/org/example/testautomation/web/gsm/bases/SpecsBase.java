@@ -9,4 +9,5 @@ public abstract class SpecsBase extends AbstractPage {
     }
 
     public abstract RumorBase getRumorMill();
+    public abstract void getPics();
 }

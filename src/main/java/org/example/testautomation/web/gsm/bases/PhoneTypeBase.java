@@ -9,4 +9,6 @@ public abstract class PhoneTypeBase extends AbstractPage {
     }
 
     public abstract ReviewBase getReview();
+
+    public abstract ShowAllBase getAllPrices();
 }
